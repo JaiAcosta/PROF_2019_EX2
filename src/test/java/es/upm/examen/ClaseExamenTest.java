@@ -22,6 +22,15 @@ public class ClaseExamenTest {
 	}
 	
 	@Test
+	public void n25 () throws EntradaInvalida {
+		List<Integer> expected=new ArrayList<Integer>();
+		
+		expected.add(5);
+		
+		assertTrue(expected.equals(ClaseExamen.primos(25)));
+	}
+	
+	@Test
 	public void n13 () throws EntradaInvalida {
 				
 		assertTrue(ClaseExamen.primos(13).isEmpty());
